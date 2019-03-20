@@ -8,7 +8,17 @@
 
 import random
 
+begin = int(input("Input begin int: "))
+end = int(input("Input end int: "))
 
-print(random.randint(1, 10))
-print(random.uniform(1,10))
-print(random.choice('abcdef'))
+print(random.randint(begin, end))
+
+begin = float(input("Input begin float: "))
+end = float(input("Input end float: "))
+
+print(random.uniform(begin, end))
+
+begin = input("Input begin symbol: ")
+end = input("Input end symbol: ")
+
+print(chr(random.randint(ord(begin), ord(end))))
